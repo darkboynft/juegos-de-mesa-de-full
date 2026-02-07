@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Juegos de Full</title>
+    
+    <!-- Favicon - Pica de baraja -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 10 C50 10, 10 35, 10 55 C10 72, 28 85, 50 85 C72 85, 90 72, 90 55 C90 35, 50 10, 50 10 Z' fill='%23D4A574'/%3E%3Cpath d='M50 85 L45 95 L55 95 Z' fill='%23D4A574'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 10 C50 10, 10 35, 10 55 C10 72, 28 85, 50 85 C72 85, 90 72, 90 55 C90 35, 50 10, 50 10 Z' fill='%23D4A574'/%3E%3Cpath d='M50 85 L45 95 L55 95 Z' fill='%23D4A574'/%3E%3C/svg%3E">
+    
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="Los Juegos de Full">
+    <meta property="og:description" content="Colección personal de juegos de mesa con filtros, búsqueda y tutoriales de Zacatrus">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tunombre.github.io/juegos-full">
+    <meta property="og:image" content="https://tunombre.github.io/juegos-full/juegos/catan.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Los Juegos de Full">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Los Juegos de Full">
+    <meta name="twitter:description" content="Colección personal de juegos de mesa con filtros, búsqueda y tutoriales de Zacatrus">
+    <meta name="twitter:image" content="https://tunombre.github.io/juegos-full/juegos/catan.jpg">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo inspirado en La gran ola de Kanagawa -->
+    <div class="wave-background">
+        <svg viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#1a5f7a;stop-opacity:0.15" />
+                    <stop offset="50%" style="stop-color:#57c5b6;stop-opacity:0.1" />
+                    <stop offset="100%" style="stop-color:#159895;stop-opacity:0.15" />
+                </linearGradient>
+                <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#159895;stop-opacity:0.12" />
+                    <stop offset="50%" style="stop-color:#57c5b6;stop-opacity:0.08" />
+                    <stop offset="100%" style="stop-color:#1a5f7a;stop-opacity:0.12" />
+                </linearGradient>
+            </defs>
+            <!-- Olas principales -->
+            <path class="wave wave-1" d="M0,400 Q360,200 720,400 T1440,400 L1440,800 L0,800 Z" fill="url(#waveGrad1)"/>
+            <path class="wave wave-2" d="M0,500 Q360,300 720,500 T1440,500 L1440,800 L0,800 Z" fill="url(#waveGrad2)"/>
+            <path class="wave wave-3" d="M0,600 Q360,450 720,600 T1440,600 L1440,800 L0,800 Z" fill="url(#waveGrad1)"/>
+            <!-- Detalles de espuma -->
+            <g class="foam" fill="rgba(255,255,255,0.2)">
+                <circle cx="200" cy="350" r="3"/>
+                <circle cx="350" cy="280" r="2"/>
+                <circle cx="500" cy="320" r="4"/>
+                <circle cx="650" cy="290" r="2"/>
+                <circle cx="800" cy="340" r="3"/>
+                <circle cx="950" cy="270" r="2"/>
+                <circle cx="1100" cy="310" r="4"/>
+                <circle cx="1250" cy="280" r="2"/>
+            </g>
+        </svg>
+    </div>
+    
+    <div class="noise-overlay"></div>
+    
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" class="spade-icon">
+                        <!-- Pica de la baraja francesa -->
+                        <path d="M50 10 C50 10, 10 35, 10 55 C10 72, 28 85, 50 85 C72 85, 90 72, 90 55 C90 35, 50 10, 50 10 Z" fill="currentColor"/>
+                        <path d="M50 85 L45 95 L55 95 Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h1 class="logo">Los Juegos de Full</h1>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Controles Sticky en PC -->
+        <section class="controls-section" id="controls-section">
+            <div class="controls-wrapper">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Buscar juegos..." class="search-input">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                </div>
+
+                <div class="filters-container">
+                    <button class="filter-toggle" id="filter-toggle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                        </svg>
+                        <span>Filtros</span>
+                    </button>
+                    
+                    <button class="sort-toggle" id="sort-toggle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="8" y1="6" x2="21" y2="6"/>
+                            <line x1="8" y1="12" x2="21" y2="12"/>
+                            <line x1="8" y1="18" x2="21" y2="18"/>
+                            <line x1="3" y1="6" x2="3.01" y2="6"/>
+                            <line x1="3" y1="12" x2="3.01" y2="12"/>
+                            <line x1="3" y1="18" x2="3.01" y2="18"/>
+                        </svg>
+                        <span>Ordenar</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="filters-panel" id="filters-panel">
+                <button class="filters-close" id="filters-close" aria-label="Cerrar filtros">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <h3>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            Dificultad
+                        </h3>
+                        <div class="filter-options" id="difficulty-filters"></div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            Edad
+                        </h3>
+                        <div class="filter-options" id="age-filters"></div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                            </svg>
+                            Jugadores
+                        </h3>
+                        <div class="filter-options" id="players-filters"></div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            Duración
+                        </h3>
+                        <div class="filter-options" id="duration-filters"></div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                            Tipo
+                        </h3>
+                        <div class="filter-options" id="type-filters"></div>
+                    </div>
+                </div>
+                
+                <div class="filter-group categories-group">
+                    <h3>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                            <line x1="7" y1="7" x2="7.01" y2="7"/>
+                        </svg>
+                        Categorías
+                    </h3>
+                    <div class="filter-options tags" id="category-filters"></div>
+                </div>
+                
+                <button class="clear-filters" id="clear-filters">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                    </svg>
+                    Limpiar filtros
+                </button>
+            </div>
+
+            <div class="sort-panel" id="sort-panel">
+                <div class="sort-options">
+                    <button class="sort-btn" data-sort="title">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 6h18M3 12h18M3 18h18"/>
+                        </svg>
+                        Alfabético
+                    </button>
+                    <button class="sort-btn" data-sort="difficulty">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        Dificultad
+                    </button>
+                    <button class="sort-btn" data-sort="age">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        Edad
+                    </button>
+                    <button class="sort-btn" data-sort="playersMin">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                        </svg>
+                        Jugadores
+                    </button>
+                    <button class="sort-btn" data-sort="duration">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        Duración
+                    </button>
+                </div>
+                <button class="sort-direction" id="sort-direction" title="Cambiar dirección">
+                    <svg id="sort-asc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 15l-6-6-6 6"/>
+                    </svg>
+                    <svg id="sort-desc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none">
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="results-info">
+            <span id="results-count">Cargando juegos...</span>
+        </section>
+
+        <section class="games-grid" id="games-grid">
+            <!-- Los juegos se cargarán dinámicamente -->
+        </section>
+    </main>
+
+    <!-- Botón flotante para móvil -->
+    <button class="fab-filter" id="fab-filter" aria-label="Abrir filtros">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+        </svg>
+    </button>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <button class="modal-nav modal-nav-prev" id="modal-prev" aria-label="Juego anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <div class="modal">
+            <button class="modal-close" id="modal-close">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <div class="modal-content" id="modal-content">
+                <!-- Contenido del modal -->
+            </div>
+        </div>
+        <button class="modal-nav modal-nav-next" id="modal-next" aria-label="Juego siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Los Juegos de Full <span id="current-year"></span></p>
+            <div class="footer-icons">
+                <span class="footer-icon">🎲</span>
+                <span class="footer-icon">🃏</span>
+                <span class="footer-icon">🎯</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="games-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
