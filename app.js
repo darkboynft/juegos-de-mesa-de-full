@@ -66,13 +66,25 @@ const categoryIcons = {
     'Colocación de piezas': '📍'
 };
 
+// Función para generar barra de dificultad
+function getDifficultyBar(level) {
+    const segments = 5;
+    let html = '<div class="difficulty-bar">';
+    for (let i = 1; i <= segments; i++) {
+        const filled = i <= level ? 'filled' : '';
+        html += `<div class="difficulty-segment ${filled}"></div>`;
+    }
+    html += '</div>';
+    return html;
+}
+
 // Configuración de filtros
 const filterConfig = {
     difficulty: [
-        { value: 'Muy Baja (1/5)', label: '★☆☆☆☆' },
-        { value: 'Baja (2/5)', label: '★★☆☆☆' },
-        { value: 'Media (3/5)', label: '★★★☆☆' },
-        { value: 'Alta (4/5)', label: '★★★★☆' }
+        { value: 'Muy Baja (1/5)', level: 1, label: 'Muy Baja (1/5)' },
+        { value: 'Baja (2/5)', level: 2, label: 'Baja (2/5)' },
+        { value: 'Media (3/5)', level: 3, label: 'Media (3/5)' },
+        { value: 'Alta (4/5)', level: 4, label: 'Alta (4/5)' }
     ],
     age: [
         { value: '6', label: '6+' },
@@ -153,7 +165,9 @@ function renderFilterChips() {
     // Dificultad
     const difficultyContainer = document.getElementById('difficulty-filters');
     difficultyContainer.innerHTML = filterConfig.difficulty.map(d => 
-        `<button class="filter-chip" data-filter="difficulty" data-value="${d.value}">${d.label}</button>`
+        `<button class="filter-chip" data-filter="difficulty" data-value="${d.value}">
+            ${d.label}
+        </button>`
     ).join('');
 
     // Edad
@@ -512,7 +526,7 @@ function renderGames() {
             <div class="game-info">
                 <h2 class="game-title">${game.title}</h2>
                 <div class="game-meta">
-                    <span>${'★'.repeat(game.difficultyLevel)}${'☆'.repeat(5-game.difficultyLevel)}</span>
+                    <span class="game-difficulty">${getDifficultyBar(game.difficultyLevel)}</span>
                     <span>${game.playersMin}-${game.playersMax} 👤</span>
                     <span>${game.duration}</span>
                 </div>
@@ -560,7 +574,7 @@ function openModal(gameTitle) {
                 <h2 class="modal-title">${game.title}</h2>
                 <p class="modal-synopsis">${game.synopsis}</p>
                 <div class="modal-tags">
-                    <span class="modal-tag">${game.difficulty}</span>
+                    <span class="modal-tag difficulty-tag">${getDifficultyBar(game.difficultyLevel)} ${game.difficulty.split(' ')[0]}</span>
                     <span class="modal-tag">${game.competitive ? '⚔️ Competitivo' : '🤝 Cooperativo'}</span>
                     ${categoriesWithIcons.slice(0, 3).map(cat => `<span class="modal-tag category">${cat.icon} ${cat.name}</span>`).join('')}
                 </div>

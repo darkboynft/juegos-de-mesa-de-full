@@ -14,7 +14,7 @@ const gamesData = [
     "development": "Estrategia, Planificación, Sociabilidad, Negociación, Gestión",
     "summary": "Lanza dados para obtener recursos. Construye caminos y pueblos. Gana el primero con 10 puntos.",
     "videoUrl": "https://www.youtube.com/watch?v=Lh5LcChAzTg",
-    "coverImage": "juegos/catan.jpg"
+    "coverImage": "juegos/catan.webp"
   },
   {
     "title": "Carcassonne",
@@ -31,7 +31,7 @@ const gamesData = [
     "development": "Visión espacial, Estrategia, Planificación, Gestión, Paciencia",
     "summary": "Coloca una loseta que encaje y decide si pones un seguidor (meeple) para puntuar áreas.",
     "videoUrl": "https://www.youtube.com/watch?v=eWQP4ysJ8YY",
-    "coverImage": "juegos/carcassonne.jpg"
+    "coverImage": "juegos/carcassonne.webp"
   },
   {
     "title": "Virus!",
@@ -48,7 +48,24 @@ const gamesData = [
     "development": "Agilidad mental, Estrategia, Toma de decisiones, Atención, Sociabilidad",
     "summary": "Sé el primero en reunir 4 órganos de diferente color totalmente sanos (libres de virus).",
     "videoUrl": "https://www.youtube.com/watch?v=4-Mjo_oTyEk",
-    "coverImage": "juegos/virus!.jpg"
+    "coverImage": "juegos/virus!.webp"
+  },
+    {
+    "title": "Virus 2",
+    "synopsis": "Completa un cuerpo sano mientras infectas los órganos de tus oponentes.",
+    "difficulty": "Muy Baja (1/5)",
+    "difficultyLevel": 1,
+    "minAge": 8,
+    "playersMin": 2,
+    "playersMax": 6,
+    "duration": "20 min",
+    "durationMinutes": 20,
+    "competitive": true,
+    "categories": ["Cartas", "Party", "Humor", "Rápido"],
+    "development": "Agilidad mental, Estrategia, Toma de decisiones, Atención, Sociabilidad",
+    "summary": "Sé el primero en reunir 4 órganos de diferente color totalmente sanos (libres de virus).",
+    "videoUrl": "https://www.youtube.com/watch?v=3hcryn9Up90",
+    "coverImage": "juegos/virus!.webp"
   },
   {
     "title": "Dixit",
@@ -65,7 +82,7 @@ const gamesData = [
     "development": "Imaginación, Empatía, Narración, Deducción, Sociabilidad",
     "summary": "El cuentacuentos dice una pista. El resto elige cartas similares. Hay que adivinar la carta original.",
     "videoUrl": "https://www.youtube.com/watch?v=DVPuPusMFpI",
-    "coverImage": "juegos/dixit.jpg"
+    "coverImage": "juegos/dixit.webp"
   },
   {
     "title": "Sagrada",
@@ -82,7 +99,7 @@ const gamesData = [
     "development": "Visión espacial, Lógica, Optimización, Estrategia, Paciencia",
     "summary": "Elige dados y colócalos en tu vidriera respetando las reglas de adyacencia y restricciones de color.",
     "videoUrl": "https://www.youtube.com/watch?v=WZ49d8THdJA",
-    "coverImage": "juegos/sagrada.jpg"
+    "coverImage": "juegos/sagrada.webp"
   },
   {
     "title": "Sushi Go!",
@@ -99,7 +116,7 @@ const gamesData = [
     "development": "Toma de decisiones, Memoria, Estrategia, Cálculo, Selección",
     "summary": "Quédate una carta y pasa el resto. Consigue puntos haciendo sets de tempura, maki o nigiris.",
     "videoUrl": "https://www.youtube.com/watch?v=WkCfpQFbw78",
-    "coverImage": "juegos/sushi_go!.jpg"
+    "coverImage": "juegos/sushi_go!.webp"
   },
   {
     "title": "Exploding Kittens",
@@ -116,7 +133,7 @@ const gamesData = [
     "development": "Gestión de riesgo, Estrategia, Suerte, Atención, Sociabilidad",
     "summary": "Roba cartas hasta que alguien saca un gato explosivo. Usa acciones para evitar explotar.",
     "videoUrl": "https://www.youtube.com/watch?v=FYwUaSrW0ls",
-    "coverImage": "juegos/exploding_kittens.jpg"
+    "coverImage": "juegos/exploding_kittens.webp"
   },
   {
     "title": "Hero Realms",
@@ -133,7 +150,7 @@ const gamesData = [
     "development": "Estrategia, Planificación, Optimización, Cálculo, Adaptabilidad",
     "summary": "Compra cartas del mercado para mejorar tu mazo y atacar la vida del rival sistemáticamente.",
     "videoUrl": "https://www.youtube.com/watch?v=wLvNx9cXivc",
-    "coverImage": "juegos/hero_realms.jpg"
+    "coverImage": "juegos/hero_realms.webp"
   },
   {
     "title": "Misión Cumplida",
@@ -150,7 +167,7 @@ const gamesData = [
     "development": "Trabajo en equipo, Comunicación, Lógica, Planificación, Estrategia",
     "summary": "Cumplid los objetivos de color o número jugando cartas en montones comunes sin hablar directamente.",
     "videoUrl": "https://www.youtube.com/watch?v=GVveiIVRhtE",
-    "coverImage": "juegos/mision_cumplida.jpg"
+    "coverImage": "juegos/mision_cumplida.webp"
   },
   {
     "title": "Pandemic Respuesta Rápida",
@@ -167,7 +184,7 @@ const gamesData = [
     "development": "Gestión de crisis, Coordinación, Rapidez, Comunicación, Estrategia",
     "summary": "Tira dados para moverte por el avión, fabricar comida/agua y lanzarlos a las ciudades antes de que el tiempo acabe.",
     "videoUrl": "https://www.youtube.com/watch?v=wikuFK_FOKY",
-    "coverImage": "juegos/pandemic_respuesta_rapida.jpg"
+    "coverImage": "juegos/pandemic_respuesta_rapida.webp"
   },
   {
     "title": "Jungle Speed",
@@ -184,7 +201,7 @@ const gamesData = [
     "development": "Reflejos, Atención, Velocidad, Coordinación, Sociabilidad",
     "summary": "Si el símbolo de tu carta coincide con el de otro, corre a por el tótem central para ganar.",
     "videoUrl": "https://www.youtube.com/watch?v=Kq2WXr5I9os",
-    "coverImage": "juegos/jungle_speed.jpg"
+    "coverImage": "juegos/jungle_speed.webp"
   },
   {
     "title": "Fantasma Blitz",
@@ -201,7 +218,7 @@ const gamesData = [
     "development": "Rapidez mental, Percepción, Agilidad, Atención, Sociabilidad",
     "summary": "Si un objeto aparece idéntico en la carta, cógelo. Si no, coge el que no comparta color ni forma.",
     "videoUrl": "https://www.youtube.com/watch?v=cBruixpK1Fg",
-    "coverImage": "juegos/fantasma_blitz.jpg"
+    "coverImage": "juegos/fantasma_blitz.webp"
   },
   {
     "title": "Dobble",
@@ -218,7 +235,7 @@ const gamesData = [
     "development": "Atención, Velocidad, Percepción visual, Reflejos, Sociabilidad",
     "summary": "Todas las cartas tienen un símbolo común. Sé el primero en nombrarlo para ganar la carta.",
     "videoUrl": "https://www.youtube.com/watch?v=SNxegbORsls",
-    "coverImage": "juegos/dobble.jpg"
+    "coverImage": "juegos/dobble.webp"
   },
   {
     "title": "Match 5",
@@ -235,7 +252,7 @@ const gamesData = [
     "development": "Pensamiento lateral, Agilidad mental, Vocabulario, Creatividad, Sociabilidad",
     "summary": "Tienes tiempo límite para escribir palabras que unan dos categorías aleatorias mostradas por los dados.",
     "videoUrl": "https://www.youtube.com/watch?v=SJL50Zg4U5I",
-    "coverImage": "juegos/match_5.jpg"
+    "coverImage": "juegos/match_5.webp"
   },
   {
     "title": "Chromino",
@@ -252,7 +269,7 @@ const gamesData = [
     "development": "Visión espacial, Lógica, Estrategia, Atención, Paciencia",
     "summary": "Coloca tus fichas haciendo que coincidan dos o más cuadrados de color con los ya puestos.",
     "videoUrl": "https://www.youtube.com/watch?v=jdgBCD6rzrM",
-    "coverImage": "juegos/chromino.jpg"
+    "coverImage": "juegos/chromino.webp"
   },
   {
     "title": "Cluedo",
@@ -269,7 +286,7 @@ const gamesData = [
     "development": "Lógica, Deducción, Memoria, Análisis, Sociabilidad",
     "summary": "Muévete por la mansión y haz sugerencias. Descarta sospechosos hasta encontrar la verdad por eliminación.",
     "videoUrl": "https://www.youtube.com/watch?v=iUEuLEDGW9k",
-    "coverImage": "juegos/cluedo.jpg"
+    "coverImage": "juegos/cluedo.webp"
   },
   {
     "title": "The Game",
@@ -286,7 +303,7 @@ const gamesData = [
     "development": "Comunicación no verbal, Lógica, Planificación, Estrategia, Trabajo en equipo",
     "summary": "Debéis jugar cartas en 4 montones (2 suben, 2 bajan). No podéis decir los números exactos que tenéis.",
     "videoUrl": "https://www.youtube.com/watch?v=Y91m8SAYbdc",
-    "coverImage": "juegos/the_game.jpg"
+    "coverImage": "juegos/the_game.webp"
   },
   {
     "title": "Samurai Sword",
@@ -303,7 +320,24 @@ const gamesData = [
     "development": "Deducción, Estrategia, Roles, Faroleo, Sociabilidad",
     "summary": "Descubre quién es el Shogun, el Samurai o el Ninja mientras atacas con cartas de armas.",
     "videoUrl": "https://www.youtube.com/watch?v=udCXta6aW0E",
-    "coverImage": "juegos/samurai_sword.jpg"
+    "coverImage": "juegos/samurai_sword.webp"
+  },
+    {
+    "title": "Samurai Sword - Sol Naciente",
+    "synopsis": "El conflicto entre shogun y ninjas llega a su punto clave, con dos ronin involucrados, decidiendo el destino del reino.",
+    "difficulty": "Media (3/5)",
+    "difficultyLevel": 3,
+    "minAge": 8,
+    "playersMin": 3,
+    "playersMax": 7,
+    "duration": "45 min",
+    "durationMinutes": 45,
+    "competitive": true,
+    "categories": ["Cartas", "Roles ocultos", "Combate"],
+    "development": "Deducción, Estrategia, Roles, Faroleo, Sociabilidad",
+    "summary": "Descubre quién es el Shogun, el Samurai o el Ninja mientras atacas con cartas de armas.",
+    "videoUrl": "https://www.youtube.com/watch?v=YwJJ72POWSg",
+    "coverImage": "samurai_sword_-_sol_naciente.webp"
   },
   {
     "title": "Spoilers",
@@ -320,7 +354,7 @@ const gamesData = [
     "development": "Creatividad, Engaño, Cultura cinematográfica, Interpretación, Sociabilidad",
     "summary": "El 'spoiler' lee una escena. Debes adivinar si el final que propone es real o un invento para engañarte.",
     "videoUrl": "https://www.youtube.com/watch?v=dFgNbmiRaFY",
-    "coverImage": "juegos/spoilers.jpg"
+    "coverImage": "juegos/spoilers.webp"
   },
   {
     "title": "Pocket Invaders",
@@ -337,7 +371,7 @@ const gamesData = [
     "development": "Estrategia, Táctica, Planificación, Gestión de azar, Geometría",
     "summary": "Mueve tus naves como en el ajedrez. Introduce nuevas naves lanzando dados. Captura la nave nodriza rival.",
     "videoUrl": "https://www.youtube.com/watch?v=Gt-wq1nGO-c",
-    "coverImage": "juegos/pocket_invaders.jpg"
+    "coverImage": "juegos/pocket_invaders.webp"
   },
   {
     "title": "City Blox",
@@ -354,7 +388,7 @@ const gamesData = [
     "development": "Visión espacial, Psicomotricidad, Lógica, Planificación, Paciencia",
     "summary": "Sé el primero en completar tus tres manzanas (casa, colegio, súper) encajando piezas en los moldes.",
     "videoUrl": "https://www.youtube.com/watch?v=ZgyjbVIp9Cs",
-    "coverImage": "juegos/city_blox.jpg"
+    "coverImage": "juegos/city_blox.webp"
   },
   {
     "title": "Party & Co Extreme 2.0",
@@ -371,7 +405,7 @@ const gamesData = [
     "development": "Expresividad, Cultura general, Trabajo en equipo, Agilidad, Sociabilidad",
     "summary": "Completa las pruebas indicadas en tus tarjetas de objetivo para ganar cacahuetes y la partida.",
     "videoUrl": "https://www.youtube.com/watch?v=w_i2CyjOz1Q",
-    "coverImage": "juegos/party_and_co_extreme_2.0.jpg"
+    "coverImage": "juegos/party_and_co_extreme_2.0.webp"
   },
   {
     "title": "Jenga",
@@ -388,7 +422,7 @@ const gamesData = [
     "development": "Psicomotricidad fina, Paciencia, Resolución de problemas, Equilibrio, Concentración",
     "summary": "Saca un bloque con una sola mano y ponlo en la cima. Pierde quien derribe la torre.",
     "videoUrl": "https://www.youtube.com/watch?v=DVsZQ2iPt4U",
-    "coverImage": "juegos/jenga.jpg"
+    "coverImage": "juegos/jenga.webp"
   },
   {
     "title": "4 en raya",
@@ -405,7 +439,7 @@ const gamesData = [
     "development": "Visión espacial, Estrategia, Lógica, Anticipación, Paciencia",
     "summary": "Suelta fichas por turnos. Gana quien conecte 4 en línea vertical, horizontal o diagonal.",
     "videoUrl": "https://www.youtube.com/watch?v=JBSbiilzg9U4",
-    "coverImage": "juegos/4_en_raya.jpg"
+    "coverImage": "juegos/4_en_raya.webp"
   },
   {
     "title": "Ajedrez",
@@ -422,7 +456,7 @@ const gamesData = [
     "development": "Estrategia, Concentración, Análisis, Planificación, Paciencia",
     "summary": "Mueve tus piezas para amenazar al rey rival. El juego acaba con el Jaque Mate.",
     "videoUrl": "https://www.youtube.com/watch?v=3VOa8bO1RX4",
-    "coverImage": "juegos/ajedrez.jpg"
+    "coverImage": "juegos/ajedrez.webp"
   },
   {
     "title": "Damas",
@@ -439,7 +473,7 @@ const gamesData = [
     "development": "Planificación, Estrategia, Lógica, Anticipación, Paciencia",
     "summary": "Mueve en diagonal. Salta sobre las fichas rivales para eliminarlas. Llega al fondo para coronar dama.",
     "videoUrl": "https://www.youtube.com/watch?v=hz9RLzqGEbo",
-    "coverImage": "juegos/damas.jpg"
+    "coverImage": "juegos/damas.webp"
   },
   {
     "title": "Dominó",
@@ -456,7 +490,7 @@ const gamesData = [
     "development": "Cálculo mental, Estrategia, Memoria, Lógica, Sociabilidad",
     "summary": "Coloca fichas que coincidan con los extremos abiertos. El primero en quedarse sin fichas gana.",
     "videoUrl": "https://www.youtube.com/watch?v=3R0KLW40XTE",
-    "coverImage": "juegos/domino.jpg"
+    "coverImage": "juegos/domino.webp"
   },
   {
     "title": "Baraja Española",
@@ -473,7 +507,7 @@ const gamesData = [
     "development": "Memoria, Estrategia, Cálculo, Picaresca, Sociabilidad",
     "summary": "Varía según el juego elegido (Escoba: sumar 15, Chinchón: combinar cartas, etc.).",
     "videoUrl": "https://www.youtube.com/watch?v=Y36idR-qJyw&list=PLEIdrY0iUqfSselaSPXE87q8z6UhEb2sM",
-    "coverImage": "juegos/baraja_espanola.jpg"
+    "coverImage": "juegos/baraja_espanola.webp"
   },
   {
     "title": "Rummikub",
@@ -490,7 +524,7 @@ const gamesData = [
     "development": "Cálculo, Agilidad mental, Visión espacial, Estrategia, Paciencia",
     "summary": "Combina tus fichas en escaleras o tríos. Puedes manipular lo que ya hay en mesa para encajar tus piezas.",
     "videoUrl": "https://www.youtube.com/watch?v=JTT_aiOqCWk",
-    "coverImage": "juegos/rummikub.jpg"
+    "coverImage": "juegos/rummikub.webp"
   },
   {
     "title": "5 Alive",
@@ -507,7 +541,7 @@ const gamesData = [
     "development": "Cálculo mental, Agilidad, Toma de decisiones, Atención, Sociabilidad",
     "summary": "Juega cartas sumando su valor al total. Si pasas de 21, pierdes una vida. Sé el último con vidas.",
     "videoUrl": "https://www.youtube.com/watch?v=sNWkEn6RsOg",
-    "coverImage": "juegos/5_alive.jpg"
+    "coverImage": "juegos/5_alive.webp"
   },
   {
     "title": "Walkie Talkie",
@@ -524,7 +558,7 @@ const gamesData = [
     "development": "Agilidad mental, Asociación, Comunicación, Rapidez, Sociabilidad",
     "summary": "Di una palabra que empiece por tu letra y coincida con el color de la mesa para descartar.",
     "videoUrl": "https://www.youtube.com/watch?v=G9BjalSRMdc",
-    "coverImage": "juegos/walkie_talkie.jpg"
+    "coverImage": "juegos/walkie_talkie.webp"
   },
   {
     "title": "Pajarracos",
@@ -541,7 +575,7 @@ const gamesData = [
     "development": "Estrategia, Atención, Toma de decisiones, Planificación, Sociabilidad",
     "summary": "Siembra cartas de fruta y usa cartas de pájaros para robar puntos a los demás jugadores.",
     "videoUrl": "https://www.youtube.com/watch?v=fRoqAVMM-uY",
-    "coverImage": "juegos/pajarracos.jpg"
+    "coverImage": "juegos/pajarracos.webp"
   },
   {
     "title": "Red 7",
@@ -558,7 +592,7 @@ const gamesData = [
     "development": "Lógica, Adaptabilidad, Anticipación, Toma de decisiones, Estrategia",
     "summary": "Al final de tu turno tienes que ir ganando con la regla actual o cambiarla para no perder.",
     "videoUrl": "https://www.youtube.com/watch?v=P60r-iMGNWI",
-    "coverImage": "juegos/red_7.jpg"
+    "coverImage": "juegos/red_7.webp"
   },
   {
     "title": "Saboteur",
@@ -575,7 +609,7 @@ const gamesData = [
     "development": "Deducción, Engaño, Sociabilidad, Estrategia, Trabajo en equipo",
     "summary": "Construye un camino con cartas hasta el oro. Si eres el saboteador, bloquéalo sin que te pillen.",
     "videoUrl": "https://www.youtube.com/watch?v=_287Gf9Kd2I",
-    "coverImage": "juegos/saboteur.jpg"
+    "coverImage": "juegos/saboteur.webp"
   },
   {
     "title": "Holi: Festival de Colores",
@@ -592,7 +626,7 @@ const gamesData = [
     "development": "Visión espacial, Planificación, Estrategia, Optimización, Sociabilidad",
     "summary": "Mueve tu ficha por los niveles y expande tus cartas de patrón de color para puntuar más.",
     "videoUrl": "https://www.youtube.com/watch?v=_wjtYF7Y4Qo",
-    "coverImage": "juegos/holi_festival_de_colores.jpg"
+    "coverImage": "juegos/holi_festival_de_colores.webp"
   },
   {
     "title": "Uno",
@@ -609,7 +643,7 @@ const gamesData = [
     "development": "Velocidad, Atención, Estrategia básica, Reflejos, Sociabilidad",
     "summary": "Empareja cartas por color o número. Di 'Uno' cuando te quede una o te penalizarán.",
     "videoUrl": "https://www.youtube.com/watch?v=bXOU4SuXdlg",
-    "coverImage": "juegos/uno.jpg"
+    "coverImage": "juegos/uno.webp"
   },
   {
     "title": "Jenga circular",
@@ -626,7 +660,7 @@ const gamesData = [
     "development": "Psicomotricidad fina, Paciencia, Concentración, Equilibrio, Precisión",
     "summary": "Saca una pieza de la torre y ponla arriba con cuidado. Pierde quien derribe la estructura.",
     "videoUrl": "https://www.youtube.com/watch?v=DVsZQ2iPt4U",
-    "coverImage": "juegos/jenga_circular.jpg"
+    "coverImage": "juegos/jenga_circular.webp"
   },
   {
     "title": "Juego de Póquer",
@@ -643,6 +677,6 @@ const gamesData = [
     "development": "Psicología, Cálculo, Engaño, Autocontrol, Estrategia",
     "summary": "Realiza apuestas según tus cartas. El ganador se lleva el bote por mejor mano o por faroleo.",
     "videoUrl": "https://www.youtube.com/watch?v=nx6f5kS84HY",
-    "coverImage": "juegos/juego_de_poker.jpg"
+    "coverImage": "juegos/juego_de_poker.webp"
   }
 ];
