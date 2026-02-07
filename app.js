@@ -203,7 +203,8 @@ function setupEventListeners() {
     document.getElementById('sort-toggle').addEventListener('click', toggleSortPanel);
 
     // FAB (móvil)
-    document.getElementById('fab-filter').addEventListener('click', () => {
+    document.getElementById('fab-filter').addEventListener('click', (e) => {
+        e.stopPropagation();
         const filtersPanel = document.getElementById('filters-panel');
         const sortPanel = document.getElementById('sort-panel');
         
@@ -215,7 +216,9 @@ function setupEventListeners() {
         
         // Scroll suave a los filtros
         if (filtersPanel.classList.contains('open')) {
-            filtersPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            setTimeout(() => {
+                filtersPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
         }
     });
 
@@ -271,7 +274,11 @@ function setupEventListeners() {
         const sortPanel = document.getElementById('sort-panel');
         const fab = document.getElementById('fab-filter');
         
-        if (!controlsSection.contains(e.target) && e.target !== fab) {
+        // Verificar si el clic fue fuera de los controles y fuera del FAB (incluyendo hijos)
+        const isOutsideControls = !controlsSection.contains(e.target);
+        const isOutsideFab = !fab.contains(e.target);
+        
+        if (isOutsideControls && isOutsideFab) {
             filtersPanel.classList.remove('open');
             sortPanel.classList.remove('open');
             document.getElementById('filter-toggle').classList.remove('active');
