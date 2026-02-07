@@ -489,43 +489,6 @@ body {
     box-shadow: 0 4px 12px rgba(224, 122, 95, 0.3);
 }
 
-/* Barra de dificultad */
-.difficulty-bar {
-    display: flex;
-    gap: 2px;
-    height: 8px;
-    width: 50px;
-}
-
-.difficulty-segment {
-    flex: 1;
-    background: var(--border-color);
-    border-radius: 1px;
-    transition: all 0.3s ease;
-}
-
-.difficulty-segment.filled {
-    background: linear-gradient(135deg, var(--accent-warm) 0%, var(--accent-tertiary) 100%);
-}
-
-/* Barra de dificultad en tarjetas */
-.game-difficulty .difficulty-bar {
-    height: 6px;
-    width: 40px;
-}
-
-/* Barra de dificultad en modal */
-.difficulty-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.difficulty-tag .difficulty-bar {
-    height: 6px;
-    width: 35px;
-}
-
 .clear-filters {
     width: 100%;
     padding: 0.75rem;
